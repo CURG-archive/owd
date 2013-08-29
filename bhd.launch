@@ -1,0 +1,9 @@
+<launch>
+  <param name="bhd/canbus_number" type="int" value="32" />  
+  <param name="bhd/hand_type" type="string" value="280+TACT" />
+  <param name="bhd/hand_publish_frequency" type="int" value="40"/>
+  <param name="bhd/log_canbus_data" type="bool" value="false" />
+  <node pkg="owd" type="canbhd" output="screen" cwd="node" name="bhd"/>
+
+</launch>
+

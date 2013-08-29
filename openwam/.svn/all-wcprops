@@ -1,0 +1,527 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/11490/public/trunk/src/owd/openwam
+END
+DataRecorder.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/9500/public/trunk/src/owd/openwam/DataRecorder.cc
+END
+mac_plotter.pl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7103/public/trunk/src/owd/openwam/mac_plotter.pl
+END
+FK.cc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/6939/public/trunk/src/owd/openwam/FK.cc
+END
+TrajType.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/11476/public/trunk/src/owd/openwam/TrajType.cc
+END
+MacQuinticBlend.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/9500/public/trunk/src/owd/openwam/MacQuinticBlend.cc
+END
+jsmove.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6939/public/trunk/src/owd/openwam/jsmove.cc
+END
+analyze_candata.pl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7859/public/trunk/src/owd/openwam/analyze_candata.pl
+END
+DH.hh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/8941/public/trunk/src/owd/openwam/DH.hh
+END
+JointsCtrl.hh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6939/public/trunk/src/owd/openwam/JointsCtrl.hh
+END
+Group.hh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/openwam/Group.hh
+END
+Dynamics.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/10225/public/trunk/src/owd/openwam/Dynamics.cc
+END
+latencies.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6939/public/trunk/src/owd/openwam/latencies.cc
+END
+ParaJointTraj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/11476/public/trunk/src/owd/openwam/ParaJointTraj.cc
+END
+PulseTraj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7768/public/trunk/src/owd/openwam/PulseTraj.cc
+END
+DataPlotter.pl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7103/public/trunk/src/owd/openwam/DataPlotter.pl
+END
+ConstrainedForceTrajectory.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/11476/public/trunk/src/owd/openwam/ConstrainedForceTrajectory.hh
+END
+ControlLoop.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/9500/public/trunk/src/owd/openwam/ControlLoop.cc
+END
+MacAccelPulse.hh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8814/public/trunk/src/owd/openwam/MacAccelPulse.hh
+END
+ParabolicSegment.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/11476/public/trunk/src/owd/openwam/ParabolicSegment.cc
+END
+mac_quint_plotter.pl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7103/public/trunk/src/owd/openwam/mac_quint_plotter.pl
+END
+mac_traj_test.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7128/public/trunk/src/owd/openwam/mac_traj_test.cc
+END
+wsmove.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6939/public/trunk/src/owd/openwam/wsmove.cc
+END
+MacQuinticElement.hh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/10654/public/trunk/src/owd/openwam/MacQuinticElement.hh
+END
+mac2_plotter.pl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7103/public/trunk/src/owd/openwam/mac2_plotter.pl
+END
+gravity.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6939/public/trunk/src/owd/openwam/gravity.cc
+END
+Trajectory.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/11490/public/trunk/src/owd/openwam/Trajectory.cc
+END
+sim_plotter.pl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7103/public/trunk/src/owd/openwam/sim_plotter.pl
+END
+SE3Ctrl.hh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/11047/public/trunk/src/owd/openwam/SE3Ctrl.hh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/openwam/Makefile
+END
+MacQuinticSegment.hh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/10654/public/trunk/src/owd/openwam/MacQuinticSegment.hh
+END
+Controller.hh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6939/public/trunk/src/owd/openwam/Controller.hh
+END
+Joint.hh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/10614/public/trunk/src/owd/openwam/Joint.hh
+END
+Plugin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/11476/public/trunk/src/owd/openwam/Plugin.cc
+END
+WAM.hh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/11476/public/trunk/src/owd/openwam/WAM.hh
+END
+MacJointTraj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/11476/public/trunk/src/owd/openwam/MacJointTraj.hh
+END
+Kinematics.hh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/11476/public/trunk/src/owd/openwam/Kinematics.hh
+END
+Puck.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/6939/public/trunk/src/owd/openwam/Puck.cc
+END
+dump.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/6939/public/trunk/src/owd/openwam/dump.cc
+END
+CANbus.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/11476/public/trunk/src/owd/openwam/CANbus.cc
+END
+jpos.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/6939/public/trunk/src/owd/openwam/jpos.cc
+END
+PID.cc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6939/public/trunk/src/owd/openwam/PID.cc
+END
+MacQuinticBlend.hh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/9500/public/trunk/src/owd/openwam/MacQuinticBlend.hh
+END
+TrajType.hh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/11476/public/trunk/src/owd/openwam/TrajType.hh
+END
+SE3CtrlPD.hh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/11047/public/trunk/src/owd/openwam/SE3CtrlPD.hh
+END
+ServoTraj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/9500/public/trunk/src/owd/openwam/ServoTraj.cc
+END
+JointCtrlPID.hh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/10614/public/trunk/src/owd/openwam/JointCtrlPID.hh
+END
+Dynamics.hh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/11476/public/trunk/src/owd/openwam/Dynamics.hh
+END
+ParaJointTraj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/11476/public/trunk/src/owd/openwam/ParaJointTraj.hh
+END
+ControlLoop_sim.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/9693/public/trunk/src/owd/openwam/ControlLoop_sim.cc
+END
+PulseTraj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7128/public/trunk/src/owd/openwam/PulseTraj.hh
+END
+ControlLoop.hh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/9500/public/trunk/src/owd/openwam/ControlLoop.hh
+END
+ParabolicSegment.hh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/9635/public/trunk/src/owd/openwam/ParabolicSegment.hh
+END
+Sigmoid.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6939/public/trunk/src/owd/openwam/Sigmoid.cc
+END
+Butterworth.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/11476/public/trunk/src/owd/openwam/Butterworth.h
+END
+StepTraj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/10059/public/trunk/src/owd/openwam/StepTraj.cc
+END
+Motor.cc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/openwam/Motor.cc
+END
+Trajectory.hh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/11490/public/trunk/src/owd/openwam/Trajectory.hh
+END
+JointsTraj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/8814/public/trunk/src/owd/openwam/JointsTraj.hh
+END
+DataPlotterAll.pl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/11476/public/trunk/src/owd/openwam/DataPlotterAll.pl
+END
+Link.hh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/11476/public/trunk/src/owd/openwam/Link.hh
+END
+Plugin.hh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/11476/public/trunk/src/owd/openwam/Plugin.hh
+END
+Puck.hh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/7848/public/trunk/src/owd/openwam/Puck.hh
+END
+CANdefs.hh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/10396/public/trunk/src/owd/openwam/CANdefs.hh
+END
+butterworth_solver.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/11476/public/trunk/src/owd/openwam/butterworth_solver.c
+END
+CANbus_sim.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/11476/public/trunk/src/owd/openwam/CANbus_sim.cc
+END
+SE3Traj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/11047/public/trunk/src/owd/openwam/SE3Traj.hh
+END
+CANbus.hh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/11476/public/trunk/src/owd/openwam/CANbus.hh
+END
+butterworth_solver.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/11476/public/trunk/src/owd/openwam/butterworth_solver.h
+END
+PID.hh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6939/public/trunk/src/owd/openwam/PID.hh
+END
+traj_smoothing_test.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/10655/public/trunk/src/owd/openwam/traj_smoothing_test.cc
+END
+ServoTraj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8814/public/trunk/src/owd/openwam/ServoTraj.hh
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/11476/public/trunk/src/owd/openwam/CMakeLists.txt
+END
+Group.cc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/openwam/Group.cc
+END
+ConstrainedForceTrajectory.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/9921/public/trunk/src/owd/openwam/ConstrainedForceTrajectory.cc
+END
+mac_traj2_test.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7128/public/trunk/src/owd/openwam/mac_traj2_test.cc
+END
+Sigmoid.hh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6939/public/trunk/src/owd/openwam/Sigmoid.hh
+END
+StepTraj.hh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8814/public/trunk/src/owd/openwam/StepTraj.hh
+END
+Profile.hh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6939/public/trunk/src/owd/openwam/Profile.hh
+END
+Motor.hh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/openwam/Motor.hh
+END
+MacQuinticSegment.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/9500/public/trunk/src/owd/openwam/MacQuinticSegment.cc
+END
+JointCtrl.hh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/10614/public/trunk/src/owd/openwam/JointCtrl.hh
+END
+Joint.cc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/openwam/Joint.cc
+END
+WAM.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/11476/public/trunk/src/owd/openwam/WAM.cc
+END
+MacJointTraj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/11476/public/trunk/src/owd/openwam/MacJointTraj.cc
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7103/public/trunk/src/owd/openwam/globals.h
+END
+Kinematics.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/11476/public/trunk/src/owd/openwam/Kinematics.cc
+END
+bus.cc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6939/public/trunk/src/owd/openwam/bus.cc
+END

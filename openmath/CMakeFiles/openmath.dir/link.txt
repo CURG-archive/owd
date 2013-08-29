@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib/libopenmath.a  CMakeFiles/openmath.dir/Inertia.o CMakeFiles/openmath.dir/SE3.o CMakeFiles/openmath.dir/SO3.o
+/usr/bin/ranlib ../lib/libopenmath.a

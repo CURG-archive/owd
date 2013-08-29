@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib/libbhdcan.a  CMakeFiles/bhdcan.dir/ControlLoop.o CMakeFiles/bhdcan.dir/CANbus.o CMakeFiles/bhdcan.dir/WAM.o CMakeFiles/bhdcan.dir/Plugin.o
+/usr/bin/ranlib ../lib/libbhdcan.a

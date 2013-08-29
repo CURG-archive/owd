@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/armuser/ros/owd/devel/setup.sh

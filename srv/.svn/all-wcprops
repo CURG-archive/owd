@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/6939/public/trunk/src/owd/srv
+END
+CalibrateJoints.srv
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/6939/public/trunk/src/owd/srv/CalibrateJoints.srv
+END
+SetGains.srv
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6939/public/trunk/src/owd/srv/SetGains.srv
+END
+StepJoint.srv
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6939/public/trunk/src/owd/srv/StepJoint.srv
+END

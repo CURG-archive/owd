@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/armuser/ros/owd/openwam/butterworth_solver.c
+math.h
+-
+butterworth_solver.h
+/home/armuser/ros/owd/openwam/butterworth_solver.h
+
+/home/armuser/ros/owd/openwam/butterworth_solver.h
+

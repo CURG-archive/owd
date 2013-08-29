@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib/libwamcan.a  CMakeFiles/wamcan.dir/ControlLoop.o CMakeFiles/wamcan.dir/CANbus.o CMakeFiles/wamcan.dir/WAM.o CMakeFiles/wamcan.dir/Plugin.o
+/usr/bin/ranlib ../lib/libwamcan.a
