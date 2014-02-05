@@ -40,36 +40,52 @@ endif (DEFINED ENV{OWD_MARCH_FLAGS})
 
 add_definitions("-O0 -ggdb3 -DWRIST -DBH8 -DRT_STATS")
 
-rosbuild_add_library(openwam Joint.cc Motor.cc Puck.cc Group.cc
-                            Sigmoid.cc Kinematics.cc Dynamics.cc
-			    TrajType.cc PulseTraj.cc Trajectory.cc ParabolicSegment.cc
-                            ParaJointTraj.cc MacJointTraj.cc MacQuinticBlend.cc MacQuinticSegment.cc
-                            ServoTraj.cc StepTraj.cc ConstrainedForceTrajectory.cc butterworth_solver.c)
+add_library(openwam Joint.cc Motor.cc Puck.cc Group.cc
+  Sigmoid.cc Kinematics.cc Dynamics.cc
+  TrajType.cc PulseTraj.cc Trajectory.cc ParabolicSegment.cc
+  ParaJointTraj.cc MacJointTraj.cc MacQuinticBlend.cc MacQuinticSegment.cc
+  ServoTraj.cc StepTraj.cc ConstrainedForceTrajectory.cc butterworth_solver.c)
 
-rosbuild_add_library(openwamsim Joint.cc CANbus_sim.cc Motor.cc Puck.cc Group.cc
-                               ControlLoop.cc Sigmoid.cc WAM.cc Kinematics.cc Dynamics.cc
-                               TrajType.cc PulseTraj.cc Trajectory.cc ParabolicSegment.cc
-                               ParaJointTraj.cc MacJointTraj.cc MacQuinticBlend.cc MacQuinticSegment.cc
-                               ServoTraj.cc StepTraj.cc ConstrainedForceTrajectory.cc
-			       Plugin.cc butterworth_solver.c)
-rosbuild_add_compile_flags(openwamsim "-DOWDSIM")
 
-rosbuild_add_library(wamcan ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
-rosbuild_add_compile_flags(wamcan "${CANBUS_DEFS}")
-rosbuild_add_link_flags(wamcan "${CANBUS_LIBS}")
+add_dependencies(openwam ${catkin_EXPORTED_TARGETS})
+if(BUILD_SIM)
+  add_library(openwamsim Joint.cc CANbus_sim.cc Motor.cc Puck.cc Group.cc
+    ControlLoop.cc Sigmoid.cc WAM.cc Kinematics.cc Dynamics.cc
+    TrajType.cc PulseTraj.cc Trajectory.cc ParabolicSegment.cc
+    ParaJointTraj.cc MacJointTraj.cc MacQuinticBlend.cc MacQuinticSegment.cc
+    ServoTraj.cc StepTraj.cc ConstrainedForceTrajectory.cc
+    Plugin.cc butterworth_solver.c)
+  set_target_properties(openwamsim PROPERTIES COMPILE_FLAGS "-DOWDSIM")
+endif(BUILD_SIM)
 
-rosbuild_add_library(bhdcan ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
-rosbuild_add_compile_flags(bhdcan "${CANBUS_DEFS} -DBH280_ONLY")
-rosbuild_add_link_flags(bhdcan "${CANBUS_LIBS}")
+if(BUILD_OWD)
+  add_library(wamcan ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
+  set_target_properties(wamcan PROPERTIES COMPILE_FLAGS "${CANBUS_DEFS}")
+  set_target_properties(wamcan PROPERTIES LINK_FLAGS "${CANBUS_LDFLAGS}")
+  add_dependencies(wamcan ${catkin_EXPORTED_TARGETS})
+endif(BUILD_OWD)
+
+
+if(BUILD_BHD)
+  add_library(bhdcan ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
+  set_target_properties(bhdcan PROPERTIES COMPILE_FLAGS "${CANBUS_DEFS} -DBH280_ONLY")
+  set_target_properties(bhdcan PROPERTIES LINK_FLAGS "${CANBUS_LDFLAGS}")
+  add_dependencies(bhdcan ${catkin_EXPORTED_TARGETS})
+endif(BUILD_BHD)
+
 
 if (RT_BUILD)
-  rosbuild_add_library(wamcanrt ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
-  rosbuild_add_compile_flags(wamcanrt "${CANBUS_DEFS} ${RT_DEFS}")
-  rosbuild_add_link_flags(wamcanrt "${CANBUS_LIBS} ${RT_LIBS}")
 
-  rosbuild_add_library(bhdcanrt ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
-  rosbuild_add_compile_flags(bhdcanrt "${CANBUS_DEFS} ${RT_DEFS} -DBH280_ONLY")
-  rosbuild_add_link_flags(bhdcanrt "${CANBUS_LIBS} ${RT_LIBS}")
+	add_library(wamcanrt ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
+	target_link_libraries(wamcanrt ${catkin_LIBRARIES})
+	set_target_properties(wamcanrt PROPERTIES COMPILE_FLAGS "${CANBUS_DEFS} ${RT_DEFS}")
+	set_target_properties(wamcanrt PROPERTIES LINK_FLAGS "${CANBUS_LIBS} ${RT_LIBS}")
+
+	add_library(bhdcanrt ControlLoop.cc CANbus.cc WAM.cc Plugin.cc)
+	target_link_libraries(bhdcanrt ${catkin_LIBRARIES})
+	set_target_properties(bhdcanrt PROPERTIES COMPILE_FLAGS "${CANBUS_DEFS} ${RT_DEFS} -DBH280_ONLY")
+	set_target_properties(bhdcanrt PROPERTIES LINK_FLAGS "${CANBUS_LIBS} ${RT_LIBS}")
+
 endif (RT_BUILD)
 
 include_directories (../openmath)

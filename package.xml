@@ -1,0 +1,42 @@
+<package>
+<name>owd</name>
+<version>1.0.0</version>
+<maintainer email="jvarley@cs.columbia.edu">Jake Varley</maintainer>
+  <description>
+	OpenWAM driver
+     ROS driver for the Barrett WAM
+  </description>
+  <author>Mike Vande Weghe (vandeweg@cmu.edu)</author>
+  <url>http://personalrobotics.ri.cmu.edu/intel-pkg/owd/html/index.html</url>
+  <license>LGPL</license>
+  <export>
+    <cpp cflags="-I${prefix}"/>
+  </export>
+ 
+<buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>pr_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>blas</build_depend>
+  <build_depend>lapack</build_depend>
+  <build_depend>gfortran</build_depend>
+  <build_depend>xenomai</build_depend>
+<!--  <build_depend>libpcan</build_depend>-->
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>pr_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>actionlib_msgs</run_depend>
+</package>
+
+
+
