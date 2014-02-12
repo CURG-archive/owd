@@ -46,7 +46,6 @@ add_library(openwam Joint.cc Motor.cc Puck.cc Group.cc
   ParaJointTraj.cc MacJointTraj.cc MacQuinticBlend.cc MacQuinticSegment.cc
   ServoTraj.cc StepTraj.cc ConstrainedForceTrajectory.cc butterworth_solver.c)
 
-
 add_dependencies(openwam ${catkin_EXPORTED_TARGETS})
 if(BUILD_SIM)
   add_library(openwamsim Joint.cc CANbus_sim.cc Motor.cc Puck.cc Group.cc

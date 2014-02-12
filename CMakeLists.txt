@@ -22,11 +22,12 @@ set(BUILD_SIM 0)
 #set (CANBUS_TYPE "ESD")
 set (CANBUS_TYPE "PEAK")
 
+include_directories (openwam openmath ${catkin_INCLUDE_DIRS} srv)
 
 add_subdirectory(openwam)
 add_subdirectory(openmath)
 
-include_directories (openwam openmath ${catkin_INCLUDE_DIRS} srv)
+
 
 add_definitions("-O0 -ggdb3 -DWRIST -DBH8")
 
@@ -130,7 +131,7 @@ endif  (DEFINED ENV{OWD_MARCH_FLAGS})
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES test
-  CATKIN_DEPENDS message_runtime
+  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs pr_msgs
 #  DEPENDS system_lib
 )
 
@@ -165,7 +166,7 @@ if(BUILD_OWD)
   target_link_libraries(owd wamcan openwam openmath lapack blas gfortran ${CANBUS_LIBS} ${catkin_LIBRARIES})
   set_target_properties(owd PROPERTIES COMPILE_FLAGS "${CANBUS_DEFS}")
   set_target_properties(owd PROPERTIES LINK_FLAGS "${CANBUS_LDFLAGS}")
-  add_dependencies(owd ${catkin_EXPORTED_TARGETS})
+  add_dependencies(owd ${catkin_EXPORTED_TARGETS} owd_generate_messages)
 endif(BUILD_OWD)
 
 
