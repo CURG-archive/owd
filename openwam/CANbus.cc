@@ -206,7 +206,14 @@ int CANbus::open(){
   handle = LINUX_CAN_Open(devicename,O_RDWR);
   
   if (!handle) {
+    
     ROS_ERROR("CANbus::open: CAN_Open(): cannot open device");
+    ROS_ERROR("Check that device is plugged in");
+    ROS_ERROR("Check if PCAN module is installed (lsmod | grep pcan");
+    ROS_ERROR("and that pcan was compiled as a character device, not a netdev device");
+    ROS_ERROR("cat /proc/pcan should show the ndev option as -NA-"); 
+    ROS_ERROR("If necessary, rebuild PCAN drivers as `make install NET=NO`");
+    
     throw OW_FAILURE;
   }
   
