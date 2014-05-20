@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
-import roslib
 import rospy
-import geometry_msgs.msg
-
 import pr_msgs.msg
 import sensor_msgs.msg
 
