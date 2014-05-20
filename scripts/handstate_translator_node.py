@@ -26,7 +26,7 @@ class HandStateTranslator:
         for finger_joint in finger_joints:
             self.finger_joint_dict[finger_joint] = float('NaN')
 
-        self.pub = rospy.Publisher('joint_states', sensor_msgs.msg.JointState)
+        self.pub = rospy.Publisher('/joint_states', sensor_msgs.msg.JointState)
 
         rospy.Subscriber("/bhd/handstate", pr_msgs.msg.BHState, self.handle_handstate_message)
 
