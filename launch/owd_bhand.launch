@@ -1,0 +1,15 @@
+<launch>
+         <!-- Type of hand installed. Should be one of:
+         * "280" For a BH280 Hand (CANbus communication)
+         * "280+TACT" For a BH280 Hand with the fingertip tactile array
+        -->
+        <param name="bhd/hand_type" type="string" value="280+TACT" />
+        <param name="bhd/hand_publish_frequency" type="int" value="40"/>
+        <param name="bhd/log_canbus_data" type="bool" value="false" />
+        <param name="bhd/canbus_number" type="int" value="32" />
+
+        <node pkg="owd" type="canbhd" output="screen" respawn="false" cwd="node" name="bhd"/>
+
+        <node pkg="owd" type="gripper_action_server.py" respawn="false" name="gripper_action_server"/>
+        <node pkg="owd" type="handstate_translator_node.py" respawn="false" name="owd_handstate_translator"/>
+</launch>
