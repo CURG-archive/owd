@@ -12,9 +12,8 @@ class HandStateTranslator:
 
     def __init__(self):
         rospy.init_node('handstate_translator_node', anonymous=True)
-        self.joint_name_prefix = rospy.get_param('barrett_joint_name_prefix','wam/bhand/')
+        self.joint_name_prefix = rospy.get_param('barrett_joint_name_prefix', 'wam/bhand/')
         finger_joints = []
-
 
         finger_joints += ['finger_1/prox_joint', 'finger_1/med_joint', 'finger_1/dist_joint']
         finger_joints += ['finger_2/prox_joint', 'finger_2/med_joint', 'finger_2/dist_joint']
@@ -41,21 +40,15 @@ class HandStateTranslator:
 
         #fill finger_joint_dict
         self.finger_joint_dict[self.joint_name_prefix + 'finger_1/prox_joint'] = msg.positions[3]
-
         self.finger_joint_dict[self.joint_name_prefix + 'finger_2/prox_joint'] = msg.positions[3]
 
         self.finger_joint_dict[self.joint_name_prefix + 'finger_1/med_joint'] = msg.positions[0]
-
-
         self.finger_joint_dict[self.joint_name_prefix + 'finger_2/med_joint'] = msg.positions[1]
-
         self.finger_joint_dict[self.joint_name_prefix + 'finger_3/med_joint'] = msg.positions[2]
 
         self.finger_joint_dict[self.joint_name_prefix + 'finger_1/dist_joint'] = msg.positions[0]/3.0
         self.finger_joint_dict[self.joint_name_prefix + 'finger_2/dist_joint'] = msg.positions[1]/3.0
         self.finger_joint_dict[self.joint_name_prefix + 'finger_3/dist_joint'] = msg.positions[2]/3.0
-
-
 
         joint_state_message.header = msg.header
         joint_state_message.name = self.finger_joint_dict.keys()
